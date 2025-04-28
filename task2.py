@@ -11,4 +11,4 @@ for i in range(0,len(keys)):
     else:
         my_dict[keys[i]] = "Нечетное"
 
-print(my_dict[5])
+print(my_dict[7])
