@@ -3,3 +3,13 @@
 # Пример ввода
 # яблоки сливы груши персики манго киви апельсины
 # 34 56 23 89 55 32 11
+keys = str(input())
+values = str(input())
+keys = keys.split()
+values = values.split()
+my_dict = dict()
+for i in range(0,len(keys)):
+    my_dict[keys[i]] = values[i]
+
+
+
