@@ -6,3 +6,15 @@
 # Первый словарь: {'a': 100, 'b': 200, 'c':300}
 # Второй словарь: {'a': 300, 'b': 200, 'd':400}
 # Результат: {'a': 400, 'b': 400, 'd': 400, 'c': 300}
+
+dict1= {'a': 100, 'b': 200, 'c':300} #даны словари
+dict2= {'a': 300, 'b': 200, 'd':400}
+keys1=list(dict1.keys())
+keys2=list(dict2.keys())
+for i in (keys1):
+    for j in (keys2):
+        if i==j:
+            dict1[i]=dict1[i]+dict2[j]
+        else:
+            dict1[j] = dict2[j]
+print(dict1)
