@@ -10,3 +10,16 @@ numbers = {'dict1': [11, 20, 30, 17, 6, 24, 90, 15, 17],
           	'dict9': [12, 70, 18, 28, 18, 28, 53, 91],
           	'dict10': [29, 79, 18, 28, 18, 28, 32, 55]}
 # Напишите программу, которая удалит из значений словаря все четные числа.
+keys = ['dict1','dict2','dict3','dict4','dict5','dict6','dict7','dict8','dict9','dict10']
+# num = list(numbers['dict1'])
+def onlyodd(num):
+	j = 0
+	for i in range(0,len(num)):
+		if num[i-j]%2==0:
+			num.pop(i-j)
+			j+=1
+	return num
+for t in range(0,len(keys)):
+	numbers[keys[t]] = onlyodd(numbers[keys[t]])
+print(numbers)
+
